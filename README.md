@@ -10,7 +10,7 @@ Hello!
  - Activate the environment: `source venv/bin/activate` (keep it active when testing)
    - Use `deactivate` to close the env
  - Install the dependencies in the venv:
-  - `pip install -r requirements.txt`
+    - `pip install -r requirements.txt`
 
 ## Server Set Up
 - Change directory to stores: `cd hackthenorth`
