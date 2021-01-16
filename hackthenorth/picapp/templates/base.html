@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    {% load static %}
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="{% static "styles/style.css" %}" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" type="image/x-icon" />
+    <!--font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>{{ page_title }}</title>
+  </head>
+
+  <body>
+      <p>header</p>
+      <ul>
+        <li>
+            <a class="" href="{% url "index" %}"> Home</a>
+          </li>
+          <li>
+            <a class="" href="{% url "search" %}"> Search</a>
+          </li>
+          <li>
+            <a class="" href="{% url "bucketlist" %}"> bucketlist</a>
+          </li>
+      </ul>
+     
+      
+      {% block content %}
+
+      {% endblock %}
+
+      <p>footer</p>
+      <div class="">
+        © 2020 ___________
+      </div>
+    </body>
+</html>

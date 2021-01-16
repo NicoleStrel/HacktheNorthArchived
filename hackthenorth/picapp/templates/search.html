@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+    {% block content %}
+        {% load static %}
+        
+        <p>search page</p>
+        <div class="search">
+            <form class="search-form" action="{% url "search" %}">
+            <input class="" type="search"   placeholder="Search" aria-label="Search" name="search">
+            <button class="btn" type="submit"><i class="fa fa-search " id="search-icon"></i></button>
+            </form>
+        </div>
+
+
+
+
+    {% endblock %}
